@@ -1,0 +1,33 @@
+{
+  "profile": {
+    "tokens": {
+      "tokenName": "Token Name",
+      "expiryDate": "Ablaufdatum",
+      "actions": "Aktionen",
+      "tableTitle": "Zugangs-Token",
+      "createToken": "Neuen Token Erstellen",
+      "delete": "Token Löschen",
+      "edit": "Token Bearbeiten",
+      "confirmDelete": "Token Löschung Bestätigen",
+      "accessToken": "Zugangs-Token",
+      "accessTokenSaveMsg": "Bitte speichern Sie diesen Zugangs-Token, da er nicht erneut angezeigt wird."
+    }
+  },
+  "token": {
+    "dialog": {
+      "update": "Token Aktualisieren: {name}",
+      "create": "Neuen Token Erstellen"
+    }
+  },
+  "system": {
+    "buttons": {
+      "close": "Schließen",
+      "cancel": "Abbrechen",
+      "save": "Speichern"
+    },
+    "defaultColumns": {
+      "name": "Name"
+    },
+    "expiryDate": "Ablaufdatum"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "profile": {
+    "tokens": {
+      "tokenName": "Token Name",
+      "expiryDate": "Expiry Date",
+      "actions": "Actions",
+      "tableTitle": "Access Tokens",
+      "createToken": "Create New Token",
+      "delete": "Delete Token",
+      "edit": "Edit Token",
+      "confirmDelete": "Delete Token Confirmation",
+      "accessToken": "Access Token",
+      "accessTokenSaveMsg": "Please save this access token as it will not be shown again."
+    }
+  },
+  "token": {
+    "dialog": {
+      "update": "Update Token: {name}",
+      "create": "Create New Token"
+    }
+  },
+  "system": {
+    "buttons": {
+      "close": "Close",
+      "cancel": "Cancel",
+      "save": "Save"
+    },
+    "defaultColumns": {
+      "name": "Name"
+    },
+    "expiryDate": "Expiry Date"
+  }
+}

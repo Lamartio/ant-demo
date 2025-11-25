@@ -1,8 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar color="primary" prominent>
-      <v-app-bar-title>App Store Demo</v-app-bar-title>
-    </v-app-bar>
+    <v-app-bar color="primary" prominent title="App Store Demo"/>
 
     <v-main>
       <v-container>
@@ -27,11 +25,15 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import {ref, watch} from 'vue'
+import {injectContext} from "./plugins/context.ts";
+import {useTheme} from "vuetify/framework";
 
+const { colorMode } = injectContext()
+const theme = useTheme()
 const count = ref(0)
 
-const increment = () => {
-  count.value++
-}
+watch(colorMode.isDark, isDark => theme.change(isDark ? 'dark' : 'light'))
+
+const increment = () => count.value++
 </script>
