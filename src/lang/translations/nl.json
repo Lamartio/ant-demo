@@ -1,33 +1,9 @@
 {
-  "profile": {
-    "tokens": {
-      "tokenName": "Token Naam",
-      "expiryDate": "Vervaldatum",
-      "actions": "Acties",
-      "tableTitle": "Toegangstokens",
-      "createToken": "Nieuwe Token Aanmaken",
-      "delete": "Token Verwijderen",
-      "edit": "Token Bewerken",
-      "confirmDelete": "Token Verwijdering Bevestigen",
-      "accessToken": "Toegangstoken",
-      "accessTokenSaveMsg": "Bewaar deze toegangstoken omdat deze niet opnieuw wordt getoond."
-    }
-  },
-  "token": {
-    "dialog": {
-      "update": "Token Bijwerken: {name}",
-      "create": "Nieuwe Token Aanmaken"
-    }
-  },
   "system": {
     "buttons": {
       "close": "Sluiten",
       "cancel": "Annuleren",
       "save": "Opslaan"
-    },
-    "defaultColumns": {
-      "name": "Naam"
-    },
-    "expiryDate": "Vervaldatum"
+    }
   }
 }
