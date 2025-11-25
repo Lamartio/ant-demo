@@ -18,19 +18,6 @@ export default defineConfig({
     'absolute-center': 'absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2',
   },
 
-  // Custom theme (optional)
-  theme: {
-    colors: {
-      // You can add custom colors here if needed
-    },
-  },
-
-  // Safelist classes that should always be included
-  safelist: [
-    // Add any classes that UnoCSS might not detect
-  ],
-
-  // Content detection
   content: {
     filesystem: [
       'src/**/*.{vue,js,ts,jsx,tsx}',

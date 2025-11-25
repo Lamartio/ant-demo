@@ -14,7 +14,8 @@
     "copy-config": "pnpm dlx shx cp app-config.json ./dist/app-config.json",
     "copy-readme": "pnpm dlx shx cp README.md ./dist/README.md",
     "copy-changelog": "pnpm dlx shx cp CHANGELOG.md ./dist/CHANGELOG.md",
-    "zip": "cd ./dist && pnpm dlx bestzip demo.zip * "
+    "zip": "cd ./dist && pnpm dlx bestzip demo.zip * ",
+    "recreate": "pnpm dlx rimraf --glob **/node_modules && pnpm dlx rimraf ./pnpm-lock.yaml && pnpm i"
   },
   "dependencies": {
     "@antcde/component-library": "^0.1.2",

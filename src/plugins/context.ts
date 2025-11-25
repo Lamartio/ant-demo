@@ -20,5 +20,8 @@ export const [provideContext, injectContext]: [Plugin, () => Context] = useSingl
 
     return { comms, colorMode, i18n, components } as const
   },
-  (context: Context) => context.comms.unsubscribe(),
+  (context: Context) => {
+      context.components.dispose()
+      context.comms.unsubscribe();
+  },
 )
