@@ -6,11 +6,7 @@
       <v-container>
         <v-row>
           <v-col cols="12">
-            <v-card>
-              <v-card-title>Welcome to Vue + Vuetify + TypeScript</v-card-title>
-              <v-card-text>
-                Your project is set up and ready to go!
-              </v-card-text>
+            <v-card title="Welcome to ANT" text="Your project is set up and ready to go!">
               <v-card-actions>
                 <v-btn color="primary" @click="increment">
                   Count: {{ count }}
