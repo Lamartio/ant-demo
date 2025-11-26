@@ -4,7 +4,7 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --port=5174",
     "preview": "vite preview",
     "clear": "pnpm dlx shx rm -rf dist",
     "lint": "eslint . --ext .vue,.ts",
