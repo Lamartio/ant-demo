@@ -29,9 +29,9 @@ const count = ref(0)
 
 watch(colorMode.isDark, isDark => theme.change(isDark ? 'dark' : 'light'))
 
-onMounted(() => {
 
-  title.value = 'Welcome to the demo!'
+onMounted(() => {
+  title.value = 'Welcome W+B & ANT'
   menu.value = [
     {
       icon: "mdi-plus",
@@ -42,6 +42,7 @@ onMounted(() => {
 })
 
 function increment() {
-  title.value = `Count: ${count.value++}`
+  count.value++;
+  title.value = `Count: ${count.value}`
 }
 </script>
