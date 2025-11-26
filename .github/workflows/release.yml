@@ -12,6 +12,8 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      pages: write
+      id-token: write
 
     steps:
       - name: Checkout
@@ -78,3 +80,18 @@ jobs:
           name: v${{ steps.version.outputs.version }}
           files: dist/demo.zip
           generate_release_notes: true
+
+      - name: Setup Pages
+        if: steps.check_release.outputs.exists == 'false'
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        if: steps.check_release.outputs.exists == 'false'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./dist
+
+      - name: Deploy to GitHub Pages
+        if: steps.check_release.outputs.exists == 'false'
+        id: deployment
+        uses: actions/deploy-pages@v4
